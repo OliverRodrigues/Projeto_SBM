@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Projeto SBM</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" type="text/css" href="moduloCiclo.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="container">
+  	<header >
+        <div id="nav-menu">
+            <div class="bg"></div>
+				<div class="fundo-button">
+					<button class="button" onclick="abrirMenu()">
+					
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<span class="material-symbols-rounded">settings</span>
+					<span id="user"><img src="/source/stock-user.png" alt=""></span>
+				</div>
+			<nav id="content-menu">
+			<ul class="menu" id="menu">
+					<li id="topSpace"><a href="index.html"><img src="/source/nav_icons/icons8-home-page-24.png"> Home</a></li>
+                    <li><a href="ciclofinal.html"><img src="/source/nav_icons/icons8-checklist-19.png"> Ciclos</a></li>
+                    <li><a href="und-negocio.html"><img src="/source/nav_icons/icons8-checklist-19.png"> Unidade de Negócio</a></li>
+                    <li><a href="frnt-estrategica.html"><img src="/source/nav_icons/icons8-checklist-19.png"> Frente Estratégica</a></li>
+                    <li><a href="dtl-frnt-estrategica.html"><img src="/source/nav_icons/icons8-checklist-19.png"> Detalhamento Frentes Estratégicas</a></li>
+                    <li><a href=""><img src="/source/nav_icons/icons8-checklist-19.png"> RMR</a></li>
+			</ul>
+			</nav>
+
+	</header>
+	  
+	<main id="container2">
+		<div class="fundo-conteudo">
+			<div class="flex-container">
+				
+				<!-- Bloco 1 -->
+
+				<div class="item1">
+					<div class="conteudoItem1">
+							<form action="">
+								<div class="div1-DtlFrntEstrategica">
+                                        <div class="line1Div-DtlFrntEstrategica" >
+                                            <label class="tituloFrntEstrategica" for="busca-ciclo">Busca</label>
+                                        </div>
+                                        <div class="line1Div-DtlFrntEstrategica">
+                                            <label class="lblCicloFrntEstrategica" for="">Ciclo</label> 
+                                            <select class="slcBuscaFrnt" name="" id="">
+                                                <option value="MB2 (FY23)">MB2 (FY23)</option>
+                                            </select>
+                                        </div>
+                                        <div class="line1Div-DtlFrntEstrategica_btn">
+                                            <button>Exportar</button>
+                                        </div>
+                                </div>
+                                
+							</form>
+							<table class="table">
+								<div class="buscaFlex">
+									<img src="source/content_icons/icone-pesquisa.png" id="lupaPesquisa" alt="lupa-de-pesquisa" srcset="">
+									<input type="search" name="busca-ciclo" id="busca-frntEstrategica" placeholder=" Buscar" class="form-control">
+									
+									</div>
+								<thead>
+								<tr>
+									<th scope="col">BU</th>
+									<th>Frente</th>
+									<th>Nome da Meta</th>
+									<th>Peso</th>
+									<th>Meta</th>
+									<th>Submeta</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td> > CROSS </td>
+									<td> </td>
+									<td> </td>
+									<td> </td>
+									<td> </td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td> > FINTECH </td>
+									<td> </td>
+									<td> </td>
+									<td> </td>
+									<td> </td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td> > FOOD DELIVERY </td>
+									<td> </td>
+									<td> </td>
+									<td> </td>
+									<td> </td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td> > MERCADO </td>
+									<td> </td>
+									<td> </td>
+									<td> </td>
+									<td> </td>
+									<td> </td>
+								</tr>
+								</tbody>
+							</table>
+							</table>
+							
+							<div class="pagination">
+							<label for="" id="pageText">1 of 1</label>
+							<a href="#">&laquo;</a>
+							<a href="#" class="active" >1</a>
+							<a href="#">&raquo;</a>
+							</div>
+						</div>
+				
+					</div>
+				<!-- Bloco 2 -->
+
+				<div class="item2">
+					<form action="">
+						
+						<label class="titulo" for="">Detalhamento Frentes Estratégicas</label>
+						<div class="Linha1FrntEstrategica">
+							<select class="form-select slcFrntEstrategicaDtlh" aria-label="Default select example">
+								<option selected>BU</option>
+							  </select>
+							  <select class="form-select slcFrntEstrategicaDtlh" aria-label="Default select example">
+								<option selected>Frente</option>
+							</select>
+							<input type="text" class="form-select slcFrntEstrategicaDtlh" placeholder="Resultado Chave da Frente">
+						</div>
+						<div class="Linha2FrntEstrategica">
+							<select class="form-select slcFrntEstrategica" aria-label="Default select example">
+								<option selected>Ciclo</option>
+							  </select>
+							<input type="text" name="" id="busca-frntEstrategica" placeholder=" Nome" class="form-control">
+						</div>
+						<div class="btnCiclo">
+							<button type="button" class="btn btn-primary btn-sm">Salvar</button>
+							<button type="button" class="btn btn-secondary btn-sm">Novo</button>
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="rodape">
+			<p>SBM TECHNOLOGY - 2022</p>
+		</footer>
+	</main>
+
+	
+	
+	<script defer>
+		let menu = document.getElementById('content-menu')
+		let conteudo = document.getElementById('container2')
+		let teste = false
+
+		function abrirMenu() {
+			if(!teste){
+				menu.style.left = '-100%';
+				conteudo.style.marginLeft = '0px';
+				teste = true;
+			}
+
+			else{
+				menu.style.left = '0%';
+				conteudo.style.marginLeft = '300px';
+				teste = false;
+			}
+		}
+	</script>
+</body>
+</html>

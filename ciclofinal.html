@@ -44,7 +44,64 @@
 	  
 	<main id="container2">
 		<div class="fundo-conteudo">
-			
+			<div class="flex-container">
+				<div class="item1">
+					<form action="">
+						<label class="titulo" for="busca-ciclo">Buscar</label>
+						<input type="search" name="busca-ciclo" id="busca-ciclo" placeholder=" Buscar" class="form-control">
+						<input type="submit" name="busca-ciclo" class="btnClick" value="Buscar">
+					</form>
+					<table class="table">
+						<thead>
+						  <tr>
+							<th scope="col">Nome <i style="font: size 17px" class="fa">&#xf0dc;</i></th>
+							<th scope="col">Status <i style="font-size:17px" class="faS">&#xf0dc;</i></th>
+						  </tr>
+						</thead>
+						<tbody>
+						 
+						</tbody>
+					  </table>
+					</table>
+					
+					<div class="pagination">
+					  <label for="" id="pageText">1 of 1</label>
+					  <a href="#">&laquo;</a>
+					  <a href="#" class="active" >1</a>
+					  <a href="#">&raquo;</a>
+					</div>
+				</div>
+				<div class="item2">
+					<form action="">
+						<label class="titulo" for="">Ciclo</label>
+						<label for="ciclo-status" id="label-status">Status</label>
+						<input type="text" name="" id="busca-ciclo" placeholder=" Nome" class="form-control">
+						<select name="ciclo-status" class="form-control" id="ciclo-status">
+							<option value="Ativo">Ativo</option>
+							<option value="Inativo">Inativo</option>
+						</select>
+						
+		
+						<!-- Data de Corte / KR-->
+						<div class="data-ciclo">
+							<input placeholder="Data de Corte" class="form-control" type="text" onfocus="(this.type='date')" id="data-corte">
+							<div class="input-group-append">
+							  <span class="input-group-text" id="basic-addon2"><img class="calendar" src="https://www.kindpng.com/picc/m/245-2458961_svg-events-calendar-calendar-icon-material-design-hd.png"></span>
+							</div>
+						  </div>
+		
+						  <div class="data-ciclo">
+							<input placeholder="Data de K R" class="form-control" type="text" onfocus="(this.type='date')" id="data-kr">
+							<div class="input-group-append">
+							  <span class="input-group-text" id="basic-addon2"><img class="calendar" src="https://www.kindpng.com/picc/m/245-2458961_svg-events-calendar-calendar-icon-material-design-hd.png"></span>
+							</div>
+						</div>
+						<div class="btnCiclo">
+							<button type="button" class="btn btn-primary btn-sm">Salvar</button>
+							<button type="button" class="btn btn-secondary btn-sm">Novo</button>
+						</div>
+				</div>
+			</div>
 		</div>
 
 		<footer class="rodape">
