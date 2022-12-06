@@ -132,6 +132,9 @@
     z-index: 1;
   }
   
+  #div1-ciclo {
+    width: 100%;
+  }
 
   
   .icon-bar {
@@ -251,6 +254,19 @@
     font-weight: bold;
   }
 
+   .divSubtitulo {
+    width: 100%;
+    margin: 35px 0 0 0;
+    float: left;
+  } 
+
+  .subTitulo {
+    color: #555555;
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
   .tituloFrntEstrategica{
     color: #555555;
     display: inline;
@@ -259,14 +275,65 @@
   }
 
   #busca-ciclo{
+    width: 70%;
     text-align-last: right;
-    width: 55%;
     margin: 15px 0px;
+    background-color: #F4F4F4;
     
   }
   
   .btnClick{
     padding: 2px 50px;
+  }
+
+  #btnClickCiclo {
+    padding: 4.5px 50px;
+    width: 29.2%;
+    background-color: #cfe2f3;
+    border: 2px solid #1d83c6;
+    font-weight: 500;
+    color: #1d83c6;
+    text-align:center;
+  }
+
+  #btnSave {
+    padding: 3px 60px;
+    width: 29.2%;
+    background-color: #e7f0f9;
+    border: 2px solid #e7f0f9;
+    font-weight: 500;
+    color: #1d83c6;
+    float: right;
+    margin: 30px 0 0 0px;
+    
+    
+  }
+  #btnNew {
+    padding: 3px 60px;
+    width: 29.2%;
+    background-color: #f4f4f4;
+    border: 2px solid #f4f4f4;
+    font-weight: 500;
+    color: #757575;
+    float: right;
+    margin: 30px 0 0 10px;
+    
+  }
+
+  #btnClickCiclo:hover  {
+    background-color: #dcf5ff;
+  }
+
+  #btnSave:hover  {
+    background-color: #dcf5ff;
+  }
+
+  #btnNew:hover  {
+    background-color: #dcf5ff;
+  }
+
+  #busca-undNegocio{
+    background-color: #f4f4f4;
   }
 
   th{
@@ -284,10 +351,12 @@
 
   #ciclo-status{
     display: inline;
-    width: 20%;
+    width: 28.5%;
+    background-color: #F4F4F4;
   }
 
   #busca-ciclo{
+    width: 70%;
     text-align-last: left;
     display: inline;
     margin: 0px 0px 15px;
@@ -298,6 +367,7 @@
     width: 50%;
     display: inline;
     margin: 15px 0px 15px;
+    background-color: #f4f4f4;
   }
 
   .buscaFlex{
@@ -306,19 +376,32 @@
     background-color: rgb(232, 232, 232);
   }
 
+  .buscaFlexFrnt{
+    margin: 20px 0 0 0;
+    padding: 0 0 0 px;
+  }
+
   #label-status{
     position: sticky;
     right: 0;
     display: block;
-    margin: 0 0 0 56%;
+    margin: 0 0 0 71%;
     
   }
 
  .data-ciclo{
     display: inline-flex;
     flex: none;
-    width: 45%;
+    width: 49.3%;
     box-sizing: border-box;
+  }
+
+  #data-corte{
+    background-color: #f4f4f4;
+  }
+
+  #data-kr{
+    background-color: #f4f4f4;
   }
 
   .calendar{
@@ -327,8 +410,26 @@
   }
 
   .btnCiclo {
-    margin: 45px 0 0 0;
-    float: right;
+    margin: 30px 0 0 0;
+  }
+  #spanPercentual {
+    padding: 8.9px 1.5%;
+    background-color: #DDDDDD;
+    border: 2px solid #DDDDDD;
+    border-radius: 0.25rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    
   }
 
   .lblCicloFrntEstrategica {
@@ -337,48 +438,77 @@
     display: block;
     font-size: 16px;
     float: right;
-    right: 7px;
+    right: 108px;
     top: 1px;
   }
 
   .Linha1FrntEstrategica {
-    display: inline;
     float: left;
     width: 100%;
+    margin: 15px 0 10px 0;
   }
 
   .Linha2FrntEstrategica {
-    display: inline;
+    margin: 15px 0 0 0;
     float: left;
     width: 100%;
   }
 
   .slcBuscaFrnt{
+    text-align-last: right;
     position: relative;
-    padding: 0px 15px;
+    padding: 0px 67px;
     float: right;
     margin-top: 0px;
     right: -130px;
     top: 11px;
   }
-
+  
   .selectFrntEstrategicas {
     padding: 6px 5em;
     direction: ltr;
   }
 
   .slcFrntEstrategica {
-    width: 45%;
+    width: 49%;
     padding: 6px 0;
+    background-color: #f4f4f4;
+    border: 1px solid #ced4da;
+  }
+
+  #btnExportar {
+    padding: 1px 20px;
+    border: 1px solid #f4f4f4;
+  }
+
+  #btnExportar:hover {
+    border: 1px solid #d6d6d6;
   }
 
   .slcFrntEstrategicaDtlh {
     width: 32.9%;
     padding: 6px 0;
+    background-color: #f4f4f4;
+    border: 1px solid #ced4da;
+  }
+
+  .slcFrntEstrategicaDtlh1 {
+    width: 27.9%;
+    padding: 6px 0;
+    background-color: #f4f4f4;
+    border: 1px solid #ced4da;
+  }
+
+  .slcFrntEstrategicaDtlh2 {
+    width: 26.9%;
+    padding: 6px 0;
+    background-color: #f4f4f4;
+    border: 1px solid #ced4da;
   }
   
   .div1-DtlFrntEstrategica {
     display: flex;
+    margin: 0 0 30px 0;
   }
 
   .line1Div-DtlFrntEstrategica {
@@ -390,6 +520,39 @@
     padding: 9px 0 0 0;
   }
 
+  #lblHistorico {
+    float: left;
+    margin: 0 50px 0 0;
+    margin-bottom: 0;
+  }
+  
+  #div1Linha4DtlhFrnt{
+    float: left;
+    margin:  0 35px 0 0;
+  }
+
+  .div2Linha3DtlhFrnt {
+    float: left;
+    width: 41.7%;
+    padding: 6px 0;
+    margin-left: 5px;
+    background-color: #f4f4f4;
+    border: 1px solid #ced4da;
+  }
+
+  textarea {  
+    width: 49.2%;
+    float: left;
+    margin: 0 0 0 5px;
+    background-color: #f4f4f4;
+    border: 1px solid #ced4da;
+  }
+
+  .thTabelaDetalhamento {
+    width: 33%;
+    background-color: rgb(232, 232, 232);
+  }
+
   .mostra{
     transform: translateX(-300px);
   }
@@ -397,4 +560,10 @@
   #lupaPesquisa {
     cursor: pointer;
     margin: 0 15px 0 0;
+  }
+
+  /* Validação */
+
+  .error {
+    border: 2px solid rgb(255, 85, 85);
   }

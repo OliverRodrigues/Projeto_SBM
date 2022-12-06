@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if e else operadores condicionais</title>
+    <script>
+        
+        let notaPortugues = prompt('Informe a sua nota em portugues')
+        let notaMatematica = prompt('Informe a sua nota de matemática')
+
+        notaPortugues = parseFloat(notaPortugues)
+        notaMatematica = parseFloat(notaMatematica)
+
+        //Média das duas notas do aluno
+        let mediaNota = ( notaPortugues + notaMatematica )  / 2 
+
+        document.write('<h1>Nota do Bimestre</h1><br/>')
+        document.write('<hr>')
+        document.write('Média do aluno: ' + mediaNota )
+    
+    
+        if (mediaNota > 6.9) {
+            document.write('<p>Você foi <b>APROVADO</b>, faça sua rematricula na unidade mais próxima!</p>')
+        }
+
+        else {
+            document.write('<p>Você foi <b>REPROVADO</b></p>')
+        }
+
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

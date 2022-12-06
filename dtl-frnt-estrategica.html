@@ -61,7 +61,7 @@
                                             </select>
                                         </div>
                                         <div class="line1Div-DtlFrntEstrategica_btn">
-                                            <button>Exportar</button>
+                                            <button id="btnExportar">&#128196; Exportar</button>
                                         </div>
                                 </div>
                                 
@@ -143,16 +143,100 @@
 							</select>
 							<input type="text" class="form-select slcFrntEstrategicaDtlh" placeholder="Resultado Chave da Frente">
 						</div>
-						<div class="Linha2FrntEstrategica">
-							<select class="form-select slcFrntEstrategica" aria-label="Default select example">
-								<option selected>Ciclo</option>
-							  </select>
-							<input type="text" name="" id="busca-frntEstrategica" placeholder=" Nome" class="form-control">
-						</div>
-						<div class="btnCiclo">
-							<button type="button" class="btn btn-primary btn-sm">Salvar</button>
-							<button type="button" class="btn btn-secondary btn-sm">Novo</button>
-						</div>
+							<div class="Linha2FrntEstrategica">
+								<input type="text" placeholder=" Peso" class="slcFrntEstrategicaDtlh1"><span id="spanPercentual">%</span>
+								<select class="form-select slcFrntEstrategicaDtlh" aria-label="Default select example">
+									<option selected>Polaridade</option>
+								</select>
+								<select class="form-select slcFrntEstrategicaDtlh" aria-label="Default select example">
+									<option selected>Medida</option>
+								</select>
+							</div>
+							<div class="Linha2FrntEstrategica">
+								
+								<div id="div1Linha3DtlhFrnt">
+									<p id="lblHistorico">Sem<br>Histórico</p>
+								</div>
+								
+								<div>
+									<input type="text" placeholder=" Baseline" class="div2Linha3DtlhFrnt">	
+								</div>
+								
+								<div>
+									<input type="text" placeholder=" Dono KR" class="div2Linha3DtlhFrnt">	
+								</div>
+
+							</div>
+
+							<div class="Linha2FrntEstrategica">
+								
+								<div class="div1Linha3DtlhFrnt">
+									<textarea rows="2" cols="0" placeholder=" Detalhamento" name="comment" form="usrform"></textarea>
+								</div>
+
+								<div class="div1Linha3DtlhFrnt">
+									<textarea rows="2" cols="0" placeholder=" Memória de Cálculo" name="comment" form="usrform"></textarea>
+								</div>
+
+							</div>
+
+							<div class="divSubtitulo">
+								<div>
+									<label for="" class="subTitulo">Objetivo e Meta </label>
+									<hr>
+								</div>
+							</div>
+							<div>
+								<input type="text" class="form-select slcFrntEstrategicaDtlh" placeholder=" Meta do Ciclo">
+								<input type="text" class="form-select slcFrntEstrategicaDtlh" placeholder=" Submeta">
+								<input type="text" class="form-select slcFrntEstrategicaDtlh" placeholder=" % de Submeta">
+							</div>
+
+							<div class="divSubtitulo">
+								<div>
+									<label for="" class="subTitulo">Curva Mensal</label>
+									<hr>
+								</div>
+							</div>
+							<div class="Linha2FrntEstrategica">
+								
+									<input type="text" onfocus="(this.type='date')" id="data-kr" placeholder=" Mês/ano" class="slcFrntEstrategicaDtlh2"><span id="spanPercentual"><img class="calendar" src="https://www.kindpng.com/picc/m/245-2458961_svg-events-calendar-calendar-icon-material-design-hd.png"></span>
+									<input type="text" class="form-select slcFrntEstrategicaDtlh" placeholder=" Meta mês">
+									<button type="button" class=" slcFrntEstrategicaDtlh" placeholder=" % de Submeta">&#43; Adicionar</button>
+							</div>
+							
+							<div class="Linha2FrntEstrategica">
+									<table class="table">
+										<thead>
+										<tr>
+											<td class="thTabelaDetalhamento" scope="col">Mês/ano <i style="font: size 17px" class="fa">&#xf0dc;</i></td>
+											<td class="thTabelaDetalhamento" scope="col">Meta <i style="font-size:17px" class="fa">&#xf0dc;</i></td>
+											<td class="thTabelaDetalhamento" scope="col">Alcançado <i style="font-size:17px" class="fa">&#xf0dc;</i></td>
+										</tr>
+										<tr>
+											<td>Nenhum registro foi encontrado</td>
+											<td></td>
+											<td></td>
+										</tr>
+										
+								</table>
+								
+							</div>
+
+							<div class="pagination">
+								<label for="" id="pageText">1 of 1</label>
+								<a href="#">&laquo;</a>
+								<a href="#" class="active" >1</a>
+								<a href="#">&raquo;</a>
+							  </div>
+							
+							
+							
+							  <div>
+								<button type="button" id="btnNew"><i style="font: size 20px" class="fa">&#128193;</i> Novo</button>
+								<button type="button" id="btnSave"><i style="font: size 15px" class="fa">&#128190;</i> Salvar</button>
+								
+							</div>
 				</div>
 			</div>
 		</div>
