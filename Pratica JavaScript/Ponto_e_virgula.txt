@@ -1,5 +1,0 @@
-Quando devo usar o ; no Javascript?
-
-O Javascript não vai te obrigar a usar, trata-se apenas de bons costumes podendo ser usado ou não.
-
-Pode ser usado ou não, fica da escolha do programador.
