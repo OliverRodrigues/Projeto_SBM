@@ -1,0 +1,90 @@
+<head>
+  <link rel="stylesheet" href="/telas-angular/src/styles.css">
+</head>
+<div class="fundo-conteudo">
+<div class="flex-container">
+<div class="item1">
+  <form action="">
+    <label class="titulo" for="busca-ciclo">Buscar</label>
+      <div id="div1-ciclo">
+        <input type="search" name="busca-ciclo" id="busca-ciclo" placeholder=" Buscar" class="form-control">
+        <input type="submit" name="busca-ciclo" id="btnClickCiclo" value="&#128269; Buscar">
+      </div>
+  </form>
+  <table class="table">
+    <thead>
+      <tr>
+      <th scope="col">Nome <i style="font: size 17px" class="fa">&#xf0dc;</i></th>
+      <th scope="col">Status <i style="font-size:17px" class="fa">&#xf0dc;</i></th>
+      </tr>
+      <tr>
+      <td>MB2 (FY23)</td>
+      <td>Ativo</td>
+      </tr>
+      <tr>
+      <td>Ciclo teste 1</td>
+      <td>Inativo</td>
+      </tr>
+      <tr>
+      <td>MB1 (FY23)</td>
+      <td>Inativo</td>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+    </table>
+
+
+  <div class="pagination">
+    <label for="" id="pageText">1 of 1</label>
+    <a href="#">&laquo;</a>
+    <a href="#" class="active" >1</a>
+    <a href="#">&raquo;</a>
+  </div>
+</div>
+
+<!--Bloco 2-->
+<div class="item2">
+  <form id="form">
+    <div class="Linha1FrntEstrategica">
+        <label class="titulo" for="">Ciclo</label>
+        <label for="ciclo-status" id="label-status">Status</label>
+        <input type="text" name="Nome" id="busca-ciclo" placeholder=" Nome" class="form-control required">
+        <select name="ciclo-status" class="form-control" id="ciclo-status">
+          <option value="Ativo">Ativo</option>
+          <option value="Inativo">Inativo</option>
+        </select>
+    </div>
+
+      <!-- Data de Corte / KR-->
+      <div class="Linha1FrntEstrategica">
+        <div class="data-ciclo">
+          <input placeholder="Data de Corte" class="form-control required" type="text" onfocus="(this.type='date')" id="data-corte" name="dataDeCorte">
+          <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2"><img class="calendar" src="https://www.kindpng.com/picc/m/245-2458961_svg-events-calendar-calendar-icon-material-design-hd.png"></span>
+          </div>
+        </div>
+
+        <div class="data-ciclo">
+          <input placeholder="Data de K R" class="form-control required" type="text" onfocus="(this.type='date')" id="data-kr" name="dataKR">
+          <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2"><img class="calendar" src="https://www.kindpng.com/picc/m/245-2458961_svg-events-calendar-calendar-icon-material-design-hd.png"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="btnCiclo">
+        <button type="button" id="btnNew"><i style="font: size 20px" class="fa">&#128193;</i> Novo</button>
+        <button type="button" id="btnSave" onclick="botaoSalvar()"><i style="font: size 15px" class="fa">&#128190;</i> Salvar</button>
+
+      </div>
+      <div>
+        <span class="span-required"></span>
+        <span class="span-required"></span>
+        <span class="span-required"></span>
+      </div>
+</form>
+</div>
+</div>
+</div>
