@@ -3,30 +3,39 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
-import { RodapeComponent } from './componentes/rodape/rodape.component';
-import { ConteudoComponent } from './componentes/conteudo/conteudo.component';
-import { CiclosComponent } from './componentes/conteudo/ciclos/ciclos.component';
-import { UnidadeDeNegocioComponent } from './componentes/conteudo/unidade-de-negocio/unidade-de-negocio.component';
-import { FrntEstrategicaComponent } from './componentes/conteudo/frnt-estrategica/frnt-estrategica.component';
-import { DetlhFrntEstrategicaComponent } from './componentes/conteudo/detlh-frnt-estrategica/detlh-frnt-estrategica.component';
-import { IndexComponent } from './componentes/conteudo/index/index.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './components/template/header/header.component';
+
+import { MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import { FooterComponent } from './components/template/footer/footer.component';
+import { NavComponent } from './components/template/nav/nav.component';
+import { MatSidenavModule} from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { HomeComponent } from './views/home/home.component';
+import { CiclosComponent } from './views/ciclos/ciclos.component'
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CabecalhoComponent,
-    RodapeComponent,
-    ConteudoComponent,
+    HeaderComponent,
+    FooterComponent,
+    NavComponent,
+    HomeComponent,
     CiclosComponent,
-    UnidadeDeNegocioComponent,
-    FrntEstrategicaComponent,
-    DetlhFrntEstrategicaComponent,
-    IndexComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,12 @@
+.header {
+    border: none;
+    background-color: #ea1d2c;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }

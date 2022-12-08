@@ -1,0 +1,18 @@
+.rodape {
+        position: fixed;
+        height: 25px;
+        padding: 5px 0;
+        font-size: 12px;
+        bottom: 0;
+        color: black;
+        text-align: center;
+        background-color: rgb(243, 243, 243);
+
+        display: flex;
+        justify-content: center;
+
+      }
+
+.v-middle {
+    vertical-align: middle;
+}
