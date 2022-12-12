@@ -1,1 +1,63 @@
-<p>ciclos works!</p>
+<div class="container">
+    <div>
+        <mat-card class="ciclos mat-elevation-z3 item bloco1">
+            <mat-card-title class="title">
+                Buscar
+            </mat-card-title>
+            <mat-card-subtitle class="subtitlex">
+                Teste de página de ciclos
+            </mat-card-subtitle>
+        </mat-card>
+    </div>
+    <div>
+        <mat-card class="ciclos mat-elevation-z3 item bloco2">
+            <mat-card-title class="title">
+                Ciclo
+            </mat-card-title>
+            <form action="" class="cicloForm">
+                <div class="containerLine">
+                    <mat-card-subtitle></mat-card-subtitle>
+                    <div class="lineItem1 noLabel">
+                        <mat-form-field class="nome">
+                            <input matInput placeholder="Nome">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="lineItem2">
+                        <mat-card-subtitle>status</mat-card-subtitle>
+                        <mat-form-field appearance="fill">
+                            <select matNativeControl required>
+                                <option value="ativo">Ativo</option>
+                                <option value="inativo">Inativo</option>
+                            </select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="containerLine">
+                    <div class="line2Item1">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Data de corte</mat-label>
+                            <input matInput [matDatepicker]="picker">
+                            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                          </mat-form-field>
+                    </div>
+                    <div class="line2Item2">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Data de K.R</mat-label>
+                            <input matInput [matDatepicker]="picker">
+                            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                          </mat-form-field>
+                    </div>
+                </div>
+            </form>
+            <div class="container">
+                <div class="buttons">
+                    <button mat-raised-button>Salvar</button>
+                    <button mat-raised-button>Novo</button>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>

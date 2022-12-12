@@ -18,3 +18,8 @@ a:hover {
 span {
     color: black;
 }
+
+.content {
+    padding: 0 1.5%;;
+    background-color: #e6e6e6;
+}
