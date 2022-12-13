@@ -1,0 +1,80 @@
+<div class="container" >
+
+    <div>
+        <mat-card class="ciclos mat-elevation-z3 item bloco1">
+            <mat-card-title class="title">
+                Buscar
+            </mat-card-title>
+            <mat-card-subtitle class="subtitlex">
+            </mat-card-subtitle>
+            <div class="containerLine">
+                <div class="lineItem1 noLabel">
+                    <mat-form-field appearance="fill">
+                        <input matInput placeholder="Busca">
+                    </mat-form-field>
+                </div>
+                    <div class="lineItem2 noLabel">
+                        <input type="submit" name="busca-ciclo" class="btnClick" value="Buscar">
+                    </div>
+            </div>
+
+            <table class="table">
+                <thead>
+                  <tr>
+                  <th scope="col">Nome <i style="font-size:18px" class="fa">&#xf0dc;</i></th>
+                  </tr>
+                  <tr>
+                  <td>CROSS</td>
+                  </tr>
+                  <tr>
+                  <td>ECONÔMICO</td>
+                  </tr>
+                  <tr>
+                  <td>FINTECH</td>
+                  </tr>
+                  <tr>
+                  <td>FOOD DELIVERY</td>
+                  </tr>
+                  <tr>
+                  <td>MERCADO</td>
+                  </tr>
+                  <tr>
+                  <td>OKRs</td>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                </table>
+                        <div class="paginacao">
+                            <mat-paginator [length]="200" [pageSizeOptions]="[10, 50, 100]" aria-label="Select page">
+                            </mat-paginator>
+                        </div>
+        </mat-card>
+    </div>
+
+
+    <div>
+        <mat-card class="ciclos mat-elevation-z3 item bloco2">
+            <mat-card-title class="title">
+                Unidade de Negócio
+            </mat-card-title>
+            <form action="" class="cicloForm">
+                <div class="containerLine">
+                    <mat-card-subtitle></mat-card-subtitle>
+                    <div class="lineItem1 noLabel form">
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Nome" class="form">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </form>
+            <div class="container">
+                <div class="buttons">
+                    <button mat-raised-button>Salvar</button>
+                    <button mat-raised-button>Novo</button>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>

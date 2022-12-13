@@ -52,26 +52,29 @@
     <div>
         <mat-card class="ciclos mat-elevation-z3 item bloco2">
             <mat-card-title class="title">
-                Ciclo
+                Frentes Estratégica
             </mat-card-title>
             <form action="" class="cicloForm">
                 <div class="containerLine">
                     <mat-card-subtitle></mat-card-subtitle>
+
                     <div class="lineItem1 noLabel form">
+                        <mat-card-subtitle></mat-card-subtitle>
+                        <mat-form-field class="example-full-width">
+                            <select matNativeControl required>
+                                <option value="ativo">BU</option>
+                                <option value="inativo">Inativo</option>
+                            </select>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="lineItem2 noLabel form">
                         <mat-form-field class="example-full-width">
                             <input matInput placeholder="Nome" class="form">
                         </mat-form-field>
                     </div>
 
-                    <div class="lineItem2">
-                        <mat-card-subtitle>status</mat-card-subtitle>
-                        <mat-form-field class="example-full-width">
-                            <select matNativeControl required>
-                                <option value="ativo">Ativo</option>
-                                <option value="inativo">Inativo</option>
-                            </select>
-                        </mat-form-field>
-                    </div>
+
                 </div>
                 <div class="containerLine">
                     <div class="line2Item1">
