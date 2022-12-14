@@ -27,6 +27,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 import { UnidadeNegocioComponent } from './views/unidade-negocio/unidade-negocio.component';
 import { FrenteEstrategicaComponent } from './views/frente-estrategica/frente-estrategica.component';
+import { DetalhamentoFrenteEstrategicaComponent } from './views/detalhamento-frente-estrategica/detalhamento-frente-estrategica.component';
+import { RmrComponent } from './views/rmr/rmr.component';
 
 
 
@@ -40,6 +42,8 @@ import { FrenteEstrategicaComponent } from './views/frente-estrategica/frente-es
     CiclosComponent,
     UnidadeNegocioComponent,
     FrenteEstrategicaComponent,
+    DetalhamentoFrenteEstrategicaComponent,
+    RmrComponent,
   ],
   imports: [
     BrowserModule,

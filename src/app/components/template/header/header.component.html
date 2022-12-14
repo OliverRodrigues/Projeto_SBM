@@ -1,6 +1,6 @@
 <p>
     <mat-toolbar class="header">
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <button (click)="abrirMenu()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
         <mat-icon>menu</mat-icon>
       </button>
       <span class="example-spacer"></span>
@@ -12,3 +12,49 @@
       </button>
     </mat-toolbar>
   </p>
+
+  <mat-sidenav-container class="container">
+    <mat-sidenav id="menu" class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">
+                    home
+                </i>
+                <span>home</span>
+            </a>
+            <a mat-list-item routerLink="/ciclos">
+                <i class="material-icons">
+                    manage_search
+                </i>
+                <span>Ciclos</span>
+            </a>
+            <a mat-list-item routerLink="/unidade-negocio">
+                <i class="material-icons">
+                    manage_search
+                </i>
+                <span>Unidade de Negócio</span>
+            </a>
+            <a mat-list-item routerLink="/frente-estrategica">
+                <i class="material-icons">
+                    manage_search
+                </i>
+                <span>Frente Estratégica</span>
+            </a>
+            <a mat-list-item routerLink="/dtlh-frente-estrategica">
+                <i class="material-icons">
+                    manage_search
+                </i>
+                <span>Detalhamento Frentes Estratégicas</span>
+            </a>
+            <a mat-list-item  routerLink="/rmr">
+              <i class="material-icons">
+                  manage_search
+              </i>
+              <span>RMR</span>
+          </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content" id="conteudo">
+     <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

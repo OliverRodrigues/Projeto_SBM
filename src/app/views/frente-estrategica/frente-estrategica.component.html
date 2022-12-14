@@ -2,9 +2,22 @@
 
     <div>
         <mat-card class="ciclos mat-elevation-z3 item bloco1">
-            <mat-card-title class="title">
-                Buscar
-            </mat-card-title>
+          <div class="containerLineTitle">
+            <div>
+              <mat-card-title class="title">
+                  Buscar
+              </mat-card-title>
+            </div>
+            <div class="lineTitleItem2 form">
+                <mat-card-subtitle>Ciclo</mat-card-subtitle>
+                <mat-form-field class="example-full-width">
+                    <select matNativeControl required>
+                        <option value="ativo">MB12 (FY23)</option>
+                        <option value="inativo">Inativo</option>
+                    </select>
+                </mat-form-field>
+            </div>
+        </div>
             <mat-card-subtitle class="subtitlex">
             </mat-card-subtitle>
             <div class="containerLine">
@@ -18,30 +31,55 @@
                     </div>
             </div>
 
-                    <table class="table">
-                        <thead>
-                          <tr>
-                          <th scope="col">Nome <i style="font: size 17px" class="fa">&#xf0dc;</i></th>
-                          <th scope="col">Status <i style="font-size:17px" class="fa">&#xf0dc;</i></th>
-                          </tr>
-                          <tr>
-                          <td>MB2 (FY23)</td>
-                          <td>Ativo</td>
-                          </tr>
-                          <tr>
-                          <td>Ciclo teste 1</td>
-                          <td>Inativo</td>
-                          </tr>
-                          <tr>
-                          <td>MB1 (FY23)</td>
-                          <td>Inativo</td>
-                          </tr>
-                        </thead>
-                        <tbody>
-
-                        </tbody>
-                        </table>
-                        <div class="paginacao">
+            <table class="table">
+              <thead>
+              <tr>
+                <th scope="col">Nome <i style="font-size:18px" class="fa">&#xf0dc;</i></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>[FOOD TEST]</td>
+              </tr>
+              <tr>
+                <td>[FOOD TEST]</td>
+              </tr>
+              <tr>
+                <td>[FOOD TEST]</td>
+              </tr>
+              <tr>
+                <td>[FOOD TEST]</td>
+              </tr>
+              <tr>
+                <td>[FOOD TEST]</td>
+              </tr>
+              <tr>
+                <td>[FOOD TEST]</td>
+              </tr>
+              <tr>
+                <td>[FOOD TEST]</td>
+              </tr>
+              <tr>
+                <td>[FOOD TEST]</td>
+              </tr>
+              <tr>
+                <td>[FOOD TEST]</td>
+              </tr>
+              <tr>
+                <td>[FOOD TEST]</td>
+              </tr>
+              <td>[FOOD TEST]</td>
+              <tr>
+                <td>[FOOD TEST]</td>
+              </tr>
+              <tr>
+                <td>[FOOD TEST]</td>
+              </tr>
+              <tr>
+                <td>[FOOD TEST]</td>
+              </tr>
+              </tbody>
+            </table>                        <div class="paginacao">
                             <mat-paginator [length]="200" [pageSizeOptions]="[10, 50, 100]" aria-label="Select page">
                             </mat-paginator>
                         </div>
@@ -70,30 +108,33 @@
 
                     <div class="lineItem2 noLabel form">
                         <mat-form-field class="example-full-width">
-                            <input matInput placeholder="Nome" class="form">
+                            <input matInput placeholder="Nome da frente" class="form">
                         </mat-form-field>
                     </div>
 
 
                 </div>
                 <div class="containerLine">
-                    <div class="line2Item1">
-                        <mat-form-field appearance="fill">
-                            <mat-label>Data de corte</mat-label>
-                            <input matInput [matDatepicker]="picker">
-                            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-                            <mat-datepicker #picker></mat-datepicker>
-                          </mat-form-field>
-                    </div>
-                    <div class="line2Item2">
-                        <mat-form-field appearance="fill">
-                            <mat-label>Data de K.R</mat-label>
-                            <input matInput [matDatepicker]="picker">
-                            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-                            <mat-datepicker #picker></mat-datepicker>
-                          </mat-form-field>
-                    </div>
-                </div>
+                  <mat-card-subtitle></mat-card-subtitle>
+
+                  <div class="lineItem1 noLabel form">
+                      <mat-card-subtitle></mat-card-subtitle>
+                      <mat-form-field class="example-full-width">
+                          <select matNativeControl required>
+                              <option value="ativo">Ciclo</option>
+                              <option value="inativo">Inativo</option>
+                          </select>
+                      </mat-form-field>
+                  </div>
+
+                  <div class="lineItem2 noLabel form">
+                      <mat-form-field class="example-full-width">
+                          <input matInput placeholder="Responsável" class="form">
+                      </mat-form-field>
+                  </div>
+
+
+              </div>
             </form>
             <div class="container">
                 <div class="buttons">

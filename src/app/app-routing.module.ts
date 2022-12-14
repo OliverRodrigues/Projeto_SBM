@@ -1,3 +1,5 @@
+import { RmrComponent } from './views/rmr/rmr.component';
+import { DetalhamentoFrenteEstrategicaComponent } from './views/detalhamento-frente-estrategica/detalhamento-frente-estrategica.component';
 import { FrenteEstrategicaComponent } from './views/frente-estrategica/frente-estrategica.component';
 import { UnidadeNegocioComponent } from './views/unidade-negocio/unidade-negocio.component';
 import { CiclosComponent } from './views/ciclos/ciclos.component';
@@ -24,6 +26,14 @@ const routes: Routes = [{
   path: "frente-estrategica",
   component: FrenteEstrategicaComponent,
 },
+{
+  path: 'dtlh-frente-estrategica',
+  component: DetalhamentoFrenteEstrategicaComponent,
+},
+{
+  path: 'rmr',
+  component: RmrComponent,
+}
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

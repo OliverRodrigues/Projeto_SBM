@@ -14,3 +14,33 @@
   button {
     color: white ;
   }
+
+  .sidenav {
+    background-color: white;
+    width: 300px;
+}
+
+.sidenav i {
+    color: black;
+}
+
+mat-list-item {
+    color: black;
+}
+
+a:hover {
+    background-color: lightgray;
+}
+
+span {
+    color: black;
+}
+
+.content {
+    padding: 0 1.5%;;
+    background-color: #e6e6e6;
+}
+
+::ng-deep .mat-drawer-container{
+  background-color: #e6e6e6;
+}

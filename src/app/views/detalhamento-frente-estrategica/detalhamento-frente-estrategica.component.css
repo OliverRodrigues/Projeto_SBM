@@ -1,93 +1,93 @@
 .ciclos .title {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 .container {
-    grid-gap: 30px;
+  grid-gap: 30px;
 
 }
 
 .cicloForm{
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .containerLineTitle {
-  margin-bottom: 10;
-  display: inline-flex;
-  justify-content: space-between;
+margin-bottom: 10;
+display: inline-flex;
+justify-content: space-between;
 }
 
 .containerLine{
-    display: flex;
-    margin-bottom: 20px;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .item{
-    padding: 10px;
+  padding: 10px;
 
 }
 
 .bloco1 {
-    width: 45%;
-    float: left;
+  width: 45%;
+  float: left;
 }
 .bloco2 {
-    width: 55%;
-    float: left;
+  width: 55%;
+  float: left;
 }
 
 .lineTitleItem2{
-  float: right;
+float: right;
 }
 
 .lineItem1 {
-    float: left;
-    margin-right: 7px;
-    width: 80%;
+  float: left;
+  margin-right: 7px;
+  width: 80%;
 }
 .lineItem2 {
-    float: left;
-    width: 60%;
+  float: left;
+  width: 60%;
 }
 
 .noLabel {
-    margin-top: 22px;
+  margin-top: 22px;
 }
 
 .btnClick{
-    padding: 2px 50px;
-  }
+  padding: 2px 50px;
+}
 
 
 .mat-mdc-form-field
 {
-    display: inline;
+  display: inline;
 }
 
 .line2Item1 {
-    float: left;
-    margin-right: 7px;
-    width: 50%;
+  float: left;
+  margin-right: 7px;
+  width: 50%;
 }
 
 .line2Item2 {
-    float: left;
-    width: 50%;
+  float: left;
+  width: 50%;
 }
 
 .buttons {
-    float: right;
-    margin-bottom: 10px;
+  float: right;
+  margin-bottom: 10px;
 }
 
 .example-full-width{
-    width: 100%;
+  width: 100%;
 }
 
 .paginacao{
-    margin: 10px 0 15px 0;
+  margin: 10px 0 15px 0;
 }
 
 ::ng-deep .mat-mdc-form-field-subscript-wrapper {
@@ -104,10 +104,10 @@ padding: 10px 0px;
 }
 
 ::ng-deep .mdc-text-field--no-label:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mat-mdc-form-field-infix {
-    padding: 0px;
-    padding: 10px 0px;
+  padding: 0px;
+  padding: 10px 0px;
 }
 
 ::ng-deep .mat-mdc-form-field-infix{
-    min-height: 38px;
+  min-height: 38px;
 }
