@@ -25,8 +25,9 @@
 }
 
 .bloco1 {
-    width: 45%;
+    width: 44%;
     float: left;
+    margin-right: 10px;
 }
 .bloco2 {
     width: 55%;
