@@ -11,13 +11,9 @@ export class HeaderComponent {
 
   ativo:Boolean = false;
 
+    abrirMenu(){
 
 
-
-
-      abrirMenu(){
-
-      
 
       let menu = (document.getElementById("menu") as HTMLInputElement);
 

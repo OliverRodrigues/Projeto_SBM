@@ -156,7 +156,158 @@
                   </mat-form-field>
 
               </div>
+
             </div>
+
+            <div class="containerLine">
+              <mat-card-subtitle></mat-card-subtitle>
+
+              <div class="lineItem noLabel form">
+                <mat-card-subtitle>Sem<br>histórico</mat-card-subtitle>
+              </div>
+
+              <div class="lineItemToggle noLabel form">
+                <mat-slide-toggle></mat-slide-toggle>
+              </div>
+
+              <div class="lineItem1 noLabel form">
+                <mat-card-subtitle></mat-card-subtitle>
+                <mat-form-field appearance="fill" style="font-size: 14px;">
+                  <input matInput placeholder="Baseline">
+              </mat-form-field>
+
+              </div>
+
+              <div class="lineItem1 noLabel form">
+                <mat-card-subtitle></mat-card-subtitle>
+                <mat-form-field appearance="fill" style="font-size: 14px;">
+                  <input matInput placeholder="Corte KR">
+              </mat-form-field>
+
+              </div>
+
+            </div>
+
+            <div class="containerLine">
+              <div class="lineItem1 noLabel form">
+                <mat-form-field class="example-full-width">
+
+                  <textarea matInput placeholder="Detalhamento"></textarea>
+                </mat-form-field>
+              </div>
+              <div class="lineItem1 noLabel form">
+                <mat-form-field class="example-full-width">
+                  <textarea matInput placeholder="Memória de Cálculo"></textarea>
+                </mat-form-field>
+              </div>
+            </div>
+
+            <div class="containerLine">
+              <div class="divSubtitulo">
+                <div>
+                  <mat-card-title class="title">
+                  <label>Objetivo e Meta </label>
+                  </mat-card-title>
+                  <hr>
+                </div>
+              </div>
+            </div>
+
+            <div class="containerLine">
+
+              <div class="lineItem1 noLabel form">
+                <mat-card-subtitle></mat-card-subtitle>
+                <mat-form-field appearance="fill" style="font-size: 14px;">
+                  <input matInput placeholder="Meta de Ciclo">
+              </mat-form-field>
+
+              </div>
+
+
+              <div class="lineItem1 noLabel form">
+                <mat-card-subtitle></mat-card-subtitle>
+                <mat-form-field appearance="fill" style="font-size: 14px;">
+                  <input matInput placeholder="Submeta">
+              </mat-form-field>
+
+              </div>
+
+
+              <div class="lineItem1 noLabel form">
+                <mat-card-subtitle></mat-card-subtitle>
+                <mat-form-field appearance="fill" style="font-size: 14px;">
+                  <input matInput placeholder="% de Submeta">
+              </mat-form-field>
+
+              </div>
+
+            </div>
+
+
+            <div class="containerLine">
+              <div class="divSubtitulo">
+                <div>
+                  <mat-card-title class="title">
+                  <label>Curva Mensal </label>
+                  </mat-card-title>
+                  <hr>
+                </div>
+              </div>
+            </div>
+
+            <div class="containerLine">
+
+              <div class="lineItem1 noLabel form">
+                <mat-form-field appearance="fill" style="font-size: 14px;">
+                    <mat-label>Mês/Ano</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+              </div>
+
+
+              <div class="lineItem1 noLabel form">
+                <mat-card-subtitle></mat-card-subtitle>
+                <mat-form-field appearance="fill" style="font-size: 14px;">
+                  <input matInput placeholder="Meta mês">
+              </mat-form-field>
+
+              </div>
+
+
+              <div class="lineItem1 noLabel form">
+                <mat-card-subtitle></mat-card-subtitle>
+                  <button class="btn-adicionar" mat-raised-button>+ Adicionar</button>
+
+              </div>
+
+            </div>
+
+            <div class="Linha2FrntEstrategica">
+              <table class="table">
+                <thead>
+                <tr>
+                  <td class="thTabelaDetalhamento" scope="col">Mês/ano <i style="font: size 17px" class="fa">&#xf0dc;</i></td>
+                  <td class="thTabelaDetalhamento" scope="col">Meta <i style="font-size:17px" class="fa">&#xf0dc;</i></td>
+                  <td class="thTabelaDetalhamento" scope="col">Alcançado <i style="font-size:17px" class="fa">&#xf0dc;</i></td>
+                </tr>
+                <tr>
+                  <td>Nenhum registro foi encontrado</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                </thead>
+            </table>
+
+            <div class="paginacao">
+              <mat-paginator [length]="200" [pageSizeOptions]="[10, 50, 100]" aria-label="Select page">
+              </mat-paginator>
+          </div>
+
+          </div>
+
+
           </form>
           <div class="container">
               <div class="buttons">

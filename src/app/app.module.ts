@@ -29,6 +29,8 @@ import { UnidadeNegocioComponent } from './views/unidade-negocio/unidade-negocio
 import { FrenteEstrategicaComponent } from './views/frente-estrategica/frente-estrategica.component';
 import { DetalhamentoFrenteEstrategicaComponent } from './views/detalhamento-frente-estrategica/detalhamento-frente-estrategica.component';
 import { RmrComponent } from './views/rmr/rmr.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
 
 
 
@@ -65,6 +67,7 @@ import { RmrComponent } from './views/rmr/rmr.component';
     MatNativeDateModule,
     MatRippleModule,
     MatPaginatorModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
